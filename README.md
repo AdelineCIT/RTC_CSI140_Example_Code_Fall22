@@ -15,7 +15,7 @@ This repository is a part of CSI-140 at Renton Technical College. This repo will
 ```sh
 git clone https://github.com/EmeryAtRTC/CSI-140_Fall22_ExampleCode.git
 ```
-3. Clone the repo again after each class to keep the most recent version of the repository.
+3. Pull changes for this repo after each class to keep the most recent version of the repository.
 4. You can also simply browse the example code files by clicking on the folders listed above.
 
 Feel free to message your instructor or the TA on Canvas if you have any questions.
