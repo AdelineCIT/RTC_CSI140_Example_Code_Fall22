@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <h1>Tables</h1>
+    <hr>
+    <p>
+        In html the &lt;table&gt; tag is used to create a table. Within a table 
+        a row is created with the &lt;tr&gt; tag. To create a cell in the table 
+        use either the &lt;td&gt; or the &lt;th&gt; tags.
+    </p>
+    <table border="1">
+        <tr>
+            <td>Row 1 Column 1</td>
+            <td>Row 1 Column 2</td>
+            <td>Row 1 Column 3</td>
+        </tr>
+        <tr>
+            <td>Row 2 Column 1</td>
+            <td>Row 2 Column 2</td>
+            <td>Row 2 Column 3</td>
+        </tr>
+        <tr>
+            <td>Row 3 Column 1</td>
+            <td>Row 3 Column 2</td>
+            <td>Row 3 Column 3</td>
+        </tr>
+    </table>
+    <h2>Table with a header a footer and a caption</h2>
+    <table border="1">
+        <caption>Student Grades</caption>
+        <thead>
+            <tr>
+                <th>Quiz 1</th>
+                <th>Quiz 2</th>
+                <th>Final Exam</th>
+                <th>Student Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>90</td>
+                <td>75</td>
+                <td>89</td>
+                <td>Student 1</td>
+            </tr>
+            <tr>
+                <td>84</td>
+                <td>99</td>
+                <td>82</td>
+                <td>Student 2</td>
+            </tr>
+            <tr>
+                <td>99</td>
+                <td>74</td>
+                <td>92</td>
+                <td>Student 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Quiz 1</th>
+                <th>Quiz 2</th>
+                <th>Final Exam</th>
+                <th>Student Name</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Rowspan and Colspan</h2>
+    <p>Rowspan and Colspan are attributes that can be assigned to a table cell 
+        that allow the cell to 
+        take up more space in the table.
+    </p>
+    <table border="1">
+        <caption>Class Schedule</caption>
+        <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+        </tr>
+        <tr>
+            <th>9:00</th>
+            <td colspan="4">CSI-120</td>
+        </tr>
+        <tr>
+            <th>10:00</th>
+            <td rowspan="2">CSI-122</td>
+            <td colspan="3">Breakfast</td>
+        </tr>
+        <tr>
+            <th>11:00</th>            
+            <td colspan="2">Math 100</td>
+            <td>Advising</td>
+        </tr>
+        <tr>
+            <th>12:00</th>
+            <td>CSI-250</td>
+            <td colspan="2">Nothing Scheduled</td>
+            <td>CSI-250</td>
+            
+        </tr>
+    </table>
+</body>
+</html>
