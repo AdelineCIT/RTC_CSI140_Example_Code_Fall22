@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Containers</title>
+    <style>
+        .black-border{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Html Containers</h1>
+    </header>
+    <h2>
+        Block vs Inline
+    </h2>
+    <p class="black-border">
+        Block elements take up the entire horizontal space.
+    </p>
+    <p>
+        Inline elements only take the amount of space required by the content
+    </p>
+    <a class="black-border" href="">Link 1</a>
+    <a class="black-border" href="">This is link 2</a>
+
+    <h2>Div and Span</h2>
+    <p>
+        The &lt;div&gt; and &lt;span&gt; tags are generic containers that are used
+         to make a portion of a page easily accessible to CSS or JavaScript
+    </p>
+    <div class="black-border">
+        This is a div. A generic Container. A div is a block element
+    </div>
+    <span class="black-border">
+        This is a span. A generic container. Span is an inline element
+    </span>
+    <div class="black-border">
+        <h2>Header</h2>
+        <p>
+            Here is my text
+        </p>
+        <a href="">Link</a>
+    </div>
+    <!-- Using the footer container -->
+    <footer>
+        <p>&copy; 2022 Josh Industries</p>        
+    </footer>
+    <!-- Using a generic container -->
+    <div id="footer">
+        <p>&copy; 2022 Josh Industries</p>  
+    </div>
+
+</body>
+</html>
