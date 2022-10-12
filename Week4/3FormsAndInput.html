@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input</title>
+</head>
+<body>
+    <h1>Forms and Input</h1>
+    <hr>
+    <p>
+        The &lt;form&gt; tag is used to get input from the user and send that input to a server for 
+        processing. The action attribute defines where the data will go. The method attribute
+        defines how the data will be sent.
+    </p>
+    <p>
+        A form is a collection of &lt;label&gt; and &lt;input&gt; tags. The input can either be
+        wrapped by the label or we use an attribute on the label called for. When a label is 
+        correctly connected to an input, clicking on the label will put the cursor inside of the input.
+    </p>
+    <form action="" method="post">
+        <div>
+            <!-- label is connected to the input using the for attribute -->
+            <label for="name">Enter Name:</label><br>
+            <input type="text" name="email" id="name" placeholder="Enter your name">
+        </div>
+        <div>
+            <!-- This is input wrapped by the label, less commonly used -->
+            <label>Email:<br> 
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+            </label>
+        </div>
+        <div>
+            <label for="password">Enter Password: </label><br>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="problem">What is the problem? </label><br>
+            <textarea name="problem" id="problem" cols="20" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="status">Is this urgent? </label><br>
+            <select name="status" id="status">
+                <option value="Emergency">Emergency</option>
+                <option value="Not Important">Not Important</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+        </div>
+        <div>
+            <label for="years">How many years have you worked for the company?</label><br>
+            <input type="number" name="years" id="years" min="0" max="100">
+        </div>
+        <div>
+            <label for="contact">How can we contact you?</label><br>
+            <input type="checkbox" name="phone" id="chkphone" value="Phone">Phone
+            <input type="checkbox" name="email" id="chkemail" value="Email">Email
+            <input type="checkbox" name="text" id="chktext" value="Text">Text
+        </div>
+        <div>
+            <label for="department">What department are you in?</label><br>
+            <input type="radio" name="department" id="radioIT">IT
+            <input type="radio" name="department" id="radAccounting">Accounting
+            <input type="radio" name="department" id="radManagement">Management
+        </div>
+        <div>
+            <input type="submit" value="Submit this form">
+            <button type="submit">Submit this form</button>
+        </div>
+    </form>
+</body>
+</html>
