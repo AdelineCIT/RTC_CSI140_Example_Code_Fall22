@@ -19,11 +19,12 @@
         wrapped by the label or we use an attribute on the label called for. When a label is 
         correctly connected to an input, clicking on the label will put the cursor inside of the input.
     </p>
-    <form action="" method="post">
+    <!-- https://wp.zybooks.com/form-viewer.php -->
+    <form action="https://wp.zybooks.com/form-viewer.php" method="post" enctype="multipart/form-data">
         <div>
             <!-- label is connected to the input using the for attribute -->
             <label for="name">Enter Name:</label><br>
-            <input type="text" name="email" id="name" placeholder="Enter your name">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
         </div>
         <div>
             <!-- This is input wrapped by the label, less commonly used -->
@@ -64,7 +65,23 @@
             <input type="radio" name="department" id="radManagement">Management
         </div>
         <div>
-            <input type="submit" value="Submit this form">
+            <label for="date">When did the problem first occur?</label><br>
+            <input type="date" id="date" name="date">
+        </div>
+        <div>
+            <label for="volume">Select the volume</label><br>
+            <input name="volume" type="range" min="0" max="100">
+        </div>
+        <div>
+            <label for="color">What is your favorite color?</label><br>
+            <input name="color" type="color">
+        </div>
+        <div>
+            <label for="picture">Please attach a picture of the problem</label><br>
+            <input type="file" name="picture" id="picture">
+        </div>
+        <div>
+            <!-- <input type="submit" value="Submit this form"> -->
             <button type="submit">Submit this form</button>
         </div>
     </form>

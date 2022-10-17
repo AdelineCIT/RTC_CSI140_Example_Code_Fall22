@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script and Style</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #styledFromHead {
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Script and Style</h1>
+    <hr>
+    <p>Script and Style are ways to bring JavaScript and CSS into your page.</p>
+    <h2>CSS</h2>
+    <p style="background-color: aqua;">CSS is a way to change how the elements on your page appear. There are a few ways 
+        to create CSS. The first is in line styling.
+    </p>
+    <p id="styledFromHead">
+        We can also style by adding a style tag to the head. This is interal styling.
+    </p>
+    <p id="externalStyling">
+        We can also style from an external file that we link to in the head
+    </p>
+    <h2>JavaScript</h2>
+    <p>The script tag allows you to bring in JavaScript</p>
+    <!-- <script>
+        alert('Hello World');
+    </script> -->
+    <script src="app.js"></script>
+</body>
+</html>
