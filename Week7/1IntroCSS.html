@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to CSS</title>
+    <!-- Using the link tag in the header to bring in css -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Here we are targeting every p tag on the page */
+        p{
+            background-color: darkblue;
+            color: antiquewhite;
+        }
+        /* How could we change only the 3rd paragraph? */
+        /* One way we can select with CSS is by id */
+        /* when selecting with ID we use the # */
+        /* Here we have given a color of cyan, since the id selector
+        is more specific than the p tag selector this one overrides */
+        #third-paragraph{
+            font-style: italic;
+            font-size: large;
+            color: cyan;
+        }
+        /* I can select by class using the .  */
+        /* Here we are targeting all p tags with class of new-font */
+        .new-font{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* There is a universal selector */
+        /* This gets you everything on the page */
+        *{
+            background-color: azure;
+        }
+        /* Descendant selector */
+        footer p{
+            background-color: white;
+            color: black;
+        }
+        /* multiple selector */
+        h1, footer{
+            font-style: italic;
+        }
+        img[src="https://rtc.edu/sites/default/files/vital-classes-1000x500.jpg"]{
+            width: 400px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="new-font">Intro To CSS</h1>
+    <hr>
+    <p class="new-font">
+        CSS is done with a selector then a property and a value
+    </p>
+    <p class="new-font">
+        This is another paragraph
+    </p>
+    <p id="third-paragraph">
+        This is the 3rd paragraph
+    </p>
+    <img src="https://rtc.edu/sites/default/files/vital-classes-1000x500.jpg" alt="">
+    <footer>
+        <p>Thanks for visiting</p>
+    </footer>
+    
+</body>
+</html>

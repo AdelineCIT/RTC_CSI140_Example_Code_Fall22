@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <!-- using external font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+    <style>
+        /* typically fonts are applied to the body. This will apply the font to the
+        entire page and all of the children of the body */
+        body {
+            /* When changing a font we change it to a font stack */
+            /* It looks for the first font on the users machine
+            if it does not find it it looks for the 2nd one and so on */
+            /* using the external google font */
+            font-family: 'Fasthand', sans-serif;
+            /* change the fontsize */
+            font-size: 24px;
+            /* pixels is one of many unit types. pixels is an absolute unit */
+            text-align: center;
+        }
+        .serif-font{
+            /* Serif font family */
+            font-family: 'Times New Roman', Times, serif;
+            /* relative units */
+            font-size: 1.2rem;
+            /* Rem is a relative size typically based at 16*/
+            /* 
+            rem is based on 16
+             em is based on the font size of the parent container
+             vw this is based on the width of the screen
+             vh this is based on the height of the screen
+             vmax 1vw or 1 vh whichever is larger
+             vmin 1vw or 1vh whicher is smaller
+             % this is based on the pct of the current font size*/
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Fonts
+    </h1>
+    <hr>
+    <div>
+        <h2>Heading 1</h2>
+        <p>The font for this text is set through the body.</p>
+    </div>
+    <div class="serif-font">
+        <h2>Heading 2</h2>
+        <p>The font for this text is set by class.</p>
+    </div>
+</body>
+</html>
