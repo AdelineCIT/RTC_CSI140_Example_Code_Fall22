@@ -19,6 +19,13 @@
         h2{
             margin:50px
         }
+        #border-paragraph{
+            border: 5px solid brown;
+            /* you can set multiple values to margin padding and border */
+            /* the first value is the top, next is right, then bottom, then left */
+            padding: 45px 0px 10px 30px;
+            margin: 20px 30px 40px 15px;
+        }
     </style>
 </head>
 <body>
@@ -30,6 +37,16 @@
             The margin is outsode of the border. If I want to move
             an element relative to its parent element. There is a good chance
             you should use margin
+        </p>
+        <h2>Border</h2>
+        <p id="border-paragraph">
+            Border is the space between the padding and the margin. Its invisible by default
+            but can be set through css. It is commonly mistaken for the end of the element
+        </p>
+        <h2>Padding</h2>
+        <p id="padding-paragraph">
+            Padding is the space inside of the border. It sits between then border and 
+            the content. It is the same color as the elemnt.
         </p>
     </div>
 </body>
