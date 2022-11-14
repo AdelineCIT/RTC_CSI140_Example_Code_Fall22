@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Items</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: turquoise;
+        }
+        .box {
+            background-color: dodgerblue;
+            color: white;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            font-size: 30px;
+            line-height: 75px;
+        }
+        #box1{
+            /* Where the box will appear and it is 0 based */
+            /* order: 3; */
+            /* flex-grow: 2; */
+            flex: 1 1 50px;
+        }
+        #box2{
+            /* order: 2; */
+            /* flex-grow: 1;
+            flex-shrink: 4; */
+            flex: 2 1 50px;
+        }
+        #box3{
+            /* order: 0; */
+            /* flex-grow: 3;
+            flex-shrink: 2; */
+            flex: 1 5 100px;
+        }
+        #box4{
+            /* order: 0; */
+            /* I Want a flex-grow of 2, flex-shrink of 3 and initial size 500px */
+            flex: 2 3 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Items</h1>
+    <p>
+        Individual flex items also have properties that can be changed. 
+        They can change their position, alignment or size within the flex box
+    </p>
+    <ul>
+        <li>
+            order: The order property changes the order of the items inside the box
+        </li>
+        <li>
+            flex-grow: specifies the rate at which an element resizes itself
+        </li>
+        <li>
+            flex-shrink: Specifies how small the item will get relative to others
+        </li>
+        <li>
+            flex-basis: Setting the initial size of the element
+        </li>
+        <li>
+            flex: shortcut for flex-grow, flex-shrink and flex-basis
+        </li>
+    </ul>
+
+    <div class="flex-container">
+        <div id="box1" class="box">1</div>
+        <div id="box2" class="box">2</div>
+        <div id="box3" class="box">3</div>
+        <div id="box4" class="box">4</div>
+    </div>
+</body>
+</html>
