@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Form Styling</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            /* This makes setting width easier */
+            box-sizing: border-box;
+        }
+        body{
+            /* Body is good place to change things about your font */
+            font-family: 'Raleway', sans-serif;
+            line-height: 2.5rem;
+            background-color: #3b5998;
+            color: white;
+        }
+        a {
+            /* remove the underline from an achor tag */
+            text-decoration: none;
+            color: rgb(47, 187, 185);
+        }
+        #container{
+            /* 30px margin top and bottom and center horizontally */
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 30px;
+        }
+        .form-wrapper{
+            background-color: white;
+            color: #333;
+            padding: 20px;
+        }
+        .form-wrapper p, h1{
+            text-align: center;
+        }
+        .form-group{
+            margin-top: 10px;
+        }
+        .form-group label{
+            display: block;
+            color: darkslategray;
+        }
+        .form-group input{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            /* round the corners of the input */
+            border-radius: 5px;
+        }
+        .form-wrapper button{
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgb(47, 187, 185);
+            color: whitesmoke;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* psuedo selector that fires when the user hovers over button */
+        .form-wrapper button:hover{
+            background-color: rgb(44, 177, 175);
+        }
+        footer{
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="form-wrapper">
+            <h1>Sign Up</h1>
+            <p>Sign up is quick and easy!</p>
+            <form>
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="firstName" id="first-name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="lastName" id="last-name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="form-group">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" name="pasword2" id="password2">
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+        <footer>
+            <p>Already have an account? <a href="login.html">Login Here</a></p>
+            <p>Forgot your password? <a href="forgot.html">Reset Password</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
