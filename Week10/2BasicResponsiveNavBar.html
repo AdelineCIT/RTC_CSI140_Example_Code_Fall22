@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Responsive Navbar</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+
+        }
+        /* linear gradient as a background */
+        html{
+            height:100%;
+            background: linear-gradient(#67b26f, #4ca2cd);
+        }
+        nav{
+            font-size: 32px;
+            /* color: white; */
+        }
+        /* we want the ul to be a flex box */
+        nav ul{
+            display: flex;
+            /* we dont want the default list styling */
+            list-style-type: none;
+        }
+        nav ul li{
+            flex-grow: 1;
+            flex-shrink: 1;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+        nav ul li:hover{
+            background: #1d392a;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        } 
+        /* Media Query to change the behavior of the flex box */
+        /* if you are on a screen and below 650px */
+        @media screen and (max-width: 650px){
+            nav ul{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!-- shortcut: ul>li*4 -->
+        <ul>
+            <li>
+                <i class="fa fa-space-shuttle"></i>
+            </li>
+            <li>
+                <a href="Home.html">Home</a>
+            </li>
+            <li>
+                <a href="About.html">About</a>
+            </li>
+            <li>
+                <a href="Services.html">Services</a>
+            </li>
+            <li>
+                <a href="Contact">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+    &#xf29c;
+    <!-- <button><i class="fa fa-plus-circle"></i>Submit</button> -->
+</body>
+
+</html>

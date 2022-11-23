@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .container{
+            background: dodgerblue;
+            margin: 5px;
+            padding: 10px;
+            height: 2000px;
+        }
+        .box{
+            padding: 10px;
+            margin: 10px;
+        }
+        #box1{
+            background: burlywood;
+            position: relative;
+            top: 0px;
+            left: 50px;
+            width: 200px
+        }
+        #box2{
+            background: yellow;
+            position: absolute;
+            top: 0px;
+            left: 300px;
+            width: 200px;
+        }
+        #box3{
+            background: green;
+            position: fixed;
+            top: 50px;
+            left: 100px;
+            width: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Position</h1>
+    <hr>
+    <p>
+        The position element is used to specify how an element should be positioned relative to the elements aorund it.
+        The location of an element can be modified once it has been given the position property. Once you set a position property
+        You can move the element around the page using the top, bottom, left and right properties. There are 5 different values
+        for the position property
+    </p>
+    <ul>
+        <li>
+            Static is the default position. If an element has static I cant position
+        </li>
+        <li>
+            Relative means I can move it relative to the elements around it
+        </li>
+        <li>
+            Absolute positioning means an element has no impact on the elements around it.
+            Any elements that are after the abolute elemtn in the document flow are going
+            to behave as though it doesnt exist
+        </li>
+        <li>
+            Fixed position is like asbolute in that and element can go anywhere except that
+            fixed is not affected by scrolling the document
+        </li>
+        <li>
+            Sticky is a combination of fixed and relative
+        </li>
+        <li>
+            z-index controls which element is on top when two of them are in the same spot
+        </li>
+
+
+    <div class="container">
+        <div class="box" id="box1">box 1</div>
+        <div class="box" id="box2">box 2</div>
+        <div class="box" id="box3">box 3</div>
+    </div>
+</body>
+</html>
