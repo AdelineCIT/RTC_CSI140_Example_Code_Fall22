@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        .card-container{
+            margin: 0 auto;
+            max-width: 1000px;
+            /* This makes all the cards into grid items */
+            display: grid;
+            /* Create 3 columns */
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            padding: 30px;
+            font-family: sans-serif;
+        }
+        .card{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1);
+            margin: auto;
+            text-align: center;
+            transition: .5s;
+        }
+        .card:hover{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+            cursor: pointer;
+        }
+        .price{
+            color: grey;
+            font-size: 28px;
+        }
+        .card-button{
+            border: none;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            cursor: pointer;
+            width: 100%;
+            font-size: 20px;
+            transition: .5s;
+        }
+        .card-button:hover{
+            color: #000;
+            background-color: white;
+        }
+        .card-info{
+            padding: 10px;
+        }
+        .card-image{
+            width: 100%;
+        }
+        @media screen and (max-width: 900px){
+            .card-container{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media screen and (max-width: 600px){
+            .card-container{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img class="card-image" src="https://via.placeholder.com/400x500" alt="">
+            <div class="card-info">
+                <h2>
+                    Tailored Jeans
+                </h2>
+                <p class="price">19.99</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ducimus tenetur cupiditate fugiat vitae odio quae vel ipsa, repellat perferendis quis in doloribus nam maiores reiciendis incidunt tempora nisi iusto!                    
+                </p>
+                <button class="card-button">Add To Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="https://via.placeholder.com/400x500" alt="">
+            <div class="card-info">
+                <h2>
+                    Fancy Shoes
+                </h2>
+                <p class="price">29.99</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ducimus tenetur cupiditate fugiat vitae odio quae vel ipsa, repellat perferendis quis in doloribus nam maiores reiciendis incidunt tempora nisi iusto!                    
+                </p>
+                <button class="card-button">Add To Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="https://via.placeholder.com/400x500" alt="">
+            <div class="card-info">
+                <h2>
+                    Nvidia 4080
+                </h2>
+                <p class="price">1500.99</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ducimus tenetur cupiditate fugiat vitae odio quae vel ipsa, repellat perferendis quis in doloribus nam maiores reiciendis incidunt tempora nisi iusto!                    
+                </p>
+                <button class="card-button">Add To Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="https://via.placeholder.com/400x500" alt="">
+            <div class="card-info">
+                <h2>
+                    Dell XPS
+                </h2>
+                <p class="price">2000.00</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ducimus tenetur cupiditate fugiat vitae odio quae vel ipsa, repellat perferendis quis in doloribus nam maiores reiciendis incidunt tempora nisi iusto!                    
+                </p>
+                <button class="card-button">Add To Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="https://via.placeholder.com/400x500" alt="">
+            <div class="card-info">
+                <h2>
+                    Tesla Model 3
+                </h2>
+                <p class="price">50000.00</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ducimus tenetur cupiditate fugiat vitae odio quae vel ipsa, repellat perferendis quis in doloribus nam maiores reiciendis incidunt tempora nisi iusto!                    
+                </p>
+                <button class="card-button">Add To Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="https://via.placeholder.com/400x500" alt="">
+            <div class="card-info">
+                <h2>
+                    Tesla Model 3
+                </h2>
+                <p class="price">50000.00</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ducimus tenetur cupiditate fugiat vitae odio quae vel ipsa, repellat perferendis quis in doloribus nam maiores reiciendis incidunt tempora nisi iusto!                    
+                </p>
+                <button class="card-button">Add To Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="https://via.placeholder.com/400x500" alt="">
+            <div class="card-info">
+                <h2>
+                    Tesla Model 3
+                </h2>
+                <p class="price">50000.00</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ducimus tenetur cupiditate fugiat vitae odio quae vel ipsa, repellat perferendis quis in doloribus nam maiores reiciendis incidunt tempora nisi iusto!                    
+                </p>
+                <button class="card-button">Add To Cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="https://via.placeholder.com/400x500" alt="">
+            <div class="card-info">
+                <h2>
+                    Tesla Model 3
+                </h2>
+                <p class="price">50000.00</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ducimus tenetur cupiditate fugiat vitae odio quae vel ipsa, repellat perferendis quis in doloribus nam maiores reiciendis incidunt tempora nisi iusto!                    
+                </p>
+                <button class="card-button">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
